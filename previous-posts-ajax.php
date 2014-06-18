@@ -24,8 +24,6 @@ License: GPLv2
     Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
-include_once('includes/PPA-Views.php');
-
 class PreviousPostsAjax
 {
 
@@ -89,8 +87,6 @@ class PreviousPostsAjax
           $args['monthnum'] = $_POST['month'];
         }
 
-        // add_filter( 'template_include', 'PPA_Views::template_chooser');
-
         $ppa_query = new WP_Query( $args );
         if ( $ppa_query->have_posts() ) {
             $html = '';
@@ -128,8 +124,6 @@ class PreviousPostsAjax
       $atts[] = 'data-month="' . $month . '"';
       // add the search string if applicable
       $atts[] = 'data-s="' . $wp_query->query_vars['s'] . '"';
-      // add the template
-      $atts[] = 'data-template="' . str_replace('.php', '', basename(get_page_template())) . '"';
       // put the attributes array together and return it
       return implode($atts, ' ');
    }
@@ -139,7 +133,7 @@ class PreviousPostsAjax
 /**
  * Create instance of controller
  */
-$lmp = new PreviousPostsAjax();
+$ppa = new PreviousPostsAjax();
 
 /* EOF */
 
