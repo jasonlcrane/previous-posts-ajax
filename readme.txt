@@ -12,6 +12,7 @@ Load previous posts on the same page instead of loading a new page when clicking
 == Installation ==
 You have a couple options:
 1. Download the .zip file, unzip it and move the previous-posts-ajax folder to your wp-content/plugins folder.
+or
 2. Download the .zip file, open your site\'s dashboard, go to Plugins > Add New, then click Upload and select the downloaded .zip file.
 
 Then, go to Plugins > Installed Plugins and activate it.

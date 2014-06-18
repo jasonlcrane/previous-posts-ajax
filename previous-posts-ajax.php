@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Previous Posts AJAX
-Plugin URI:  http://jasonlcrane.com
+Plugin URI:  https://github.com/jasonlcrane/previous-posts-ajax
 Description: Load previous posts on the same page instead of loading a new page when clicking the previous posts link.
 Version: 1.0
 Author: Jason Crane
